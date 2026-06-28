@@ -1,0 +1,59 @@
+{
+  "name": "velr-javascript-examples",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Examples showing how to use the Velr JavaScript driver",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "velr-js-examples": "./src/cli.js"
+  },
+  "scripts": {
+    "list": "node src/cli.js list",
+    "example": "node src/cli.js",
+    "build": "node --check src/cli.js",
+    "test": "vitest run",
+    "test:native": "node scripts/run-native-tests.mjs"
+  },
+  "dependencies": {
+    "@velr-ai/velr": "^0.2.29"
+  },
+  "peerDependencies": {
+    "apache-arrow": ">=15",
+    "arquero": ">=8",
+    "csv-parse": ">=5",
+    "vega": ">=5",
+    "vega-lite": ">=5"
+  },
+  "peerDependenciesMeta": {
+    "apache-arrow": {
+      "optional": true
+    },
+    "arquero": {
+      "optional": true
+    },
+    "csv-parse": {
+      "optional": true
+    },
+    "vega": {
+      "optional": true
+    },
+    "vega-lite": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velr-ai/velr-javascript-examples.git"
+  },
+  "homepage": "https://velr.ai/",
+  "bugs": {
+    "url": "https://github.com/velr-ai/velr-javascript-examples/issues"
+  }
+}
