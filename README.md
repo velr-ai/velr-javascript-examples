@@ -166,10 +166,10 @@ npm test
 
 The default tests verify that the example registry is complete and that every example module exports `main()`.
 
-To run a small native smoke test against the installed Velr runtime:
+To run a small native smoke test against the installed Velr runtime, including Arrow IPC `UNWIND BIND(...)`:
 
 ```bash
-VELR_EXAMPLES_NATIVE=1 npm test
+npm run test:native
 ```
 
 ## Related links

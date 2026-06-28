@@ -43,6 +43,7 @@
     }
   },
   "devDependencies": {
+    "apache-arrow": "^21.1.0",
     "vitest": "^3.0.0"
   },
   "engines": {
