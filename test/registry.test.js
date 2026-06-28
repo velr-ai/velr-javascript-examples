@@ -46,7 +46,7 @@ const expected = [
 ];
 
 describe("example registry", () => {
-  it("matches the Python example module layout", () => {
+  it("matches the documented example registry", () => {
     expect(EXAMPLES).toEqual(expected);
   });
 

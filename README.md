@@ -76,7 +76,7 @@ node src/cli.js basic_query
 
 ## Example layout
 
-Examples mirror the Python examples repository where that makes sense, while keeping the code idiomatic for JavaScript.
+Examples are grouped by common Velr workflows while keeping the code idiomatic for JavaScript.
 
 ### Core driver examples
 
@@ -115,7 +115,7 @@ Examples mirror the Python examples repository where that makes sense, while kee
 
 ### Dataframe, Arrow, CSV, and plotting examples
 
-These mirror the Python dataframe/Arrow workflows using JavaScript ecosystem tools:
+These examples use JavaScript ecosystem tools for dataframe, Arrow, CSV, and plotting workflows:
 
 - Arquero for dataframe-shaped examples
 - ordinary object arrays for lightweight columnar examples
@@ -123,7 +123,7 @@ These mirror the Python dataframe/Arrow workflows using JavaScript ecosystem too
 - csv-parse for CSV examples
 - Vega/Vega-Lite for plotting examples
 
-The filenames intentionally match the Python examples so users can move between repositories easily.
+The filenames are intentionally consistent across the Velr JavaScript and TypeScript example repositories so users can move between them easily.
 
 ## Minimal example
 
@@ -156,7 +156,7 @@ They generally prefer:
 - `transaction()`, `withSavepoint()`, and `withSavepointNamed()` for scoped transactional code
 - dynamic imports for optional dataframe, Arrow, CSV, and plotting dependencies
 
-The examples aim to stay conceptually close to the Python examples while still feeling natural to JavaScript users.
+The examples aim to stay close to Velr driver concepts while still feeling natural to JavaScript users.
 
 ## Testing
 
@@ -164,9 +164,9 @@ The examples aim to stay conceptually close to the Python examples while still f
 npm test
 ```
 
-The default tests verify that the example registry matches the Python module layout and that every example module exports `main()`.
+The default tests verify that the example registry is complete and that every example module exports `main()`.
 
-To run a small native smoke test against a local Velr runtime:
+To run a small native smoke test against the installed Velr runtime:
 
 ```bash
 VELR_EXAMPLES_NATIVE=1 npm test
@@ -176,7 +176,6 @@ VELR_EXAMPLES_NATIVE=1 npm test
 
 - [Velr](https://velr.ai/)
 - [Velr JavaScript examples](https://github.com/velr-ai/velr-javascript-examples)
-- [velr-python-examples](https://github.com/velr-ai/velr-python-examples)
 - [velr-rust-examples](https://github.com/velr-ai/velr-rust-examples)
 
 ## License
